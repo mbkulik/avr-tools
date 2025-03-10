@@ -1,0 +1,20 @@
+
+** Bloom
+
+- Will not compile since procps-ng has changed api for procps/readproc.h
+- will re investigate in future
+- needs php-mbstring php-xml packages
+
+
+** avarice
+
+- build, needs autoconf automake for building from HEAD
+- will package and test
+
+** avr-gdb
+
+- based on gdb-minimal rpm build but with avr target
+- needs testing
+- Do we need to pull in fedora's gdb patches?
+
+based on archived repo: https://github.com/jpf91/avr-gdb-spec/

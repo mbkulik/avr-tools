@@ -1,0 +1,8 @@
+FROM fedora:41
+RUN dnf update -y --refresh
+RUN dnf install -y rpm-build rpmdevtools
+RUN rpmdev-setuptree
+
+COPY build-avarice.sh /root
+COPY build-avr-gdb.sh /root
+WORKDIR /root
